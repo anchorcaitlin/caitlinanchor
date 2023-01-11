@@ -1,0 +1,22 @@
+% The tests below tests when the user already knows the time of flight, 
+maximum height and range of the projectile. For this to occur, the elements 
+4, 5 and 6 need to be present in the vector indexList. Other elements can 
+also be present in the vector indexList for this to occur. 
+
+% Test 1. White box testing.
+indexList = [4, 5, 6];
+Expected output: You already know the time of flight, maximum " + ...
+        "height and range of the projectile! (Message displayed in a message
+         dialog box)
+
+% Test 2. White box testing.
+indexList = [1, 2, 3, 4, 5, 6];
+Expected output: You already know the time of flight, maximum " + ...
+        "height and range of the projectile! (Message displayed in a message
+         dialog box)
+
+% Test 1. White box testing.
+indexList = [3, 4, 5, 6];
+Expected output: You already know the time of flight, maximum " + ...
+        "height and range of the projectile! (Message displayed in a message
+         dialog box)

@@ -1,0 +1,29 @@
+% The tests below confirms the calculations of the time of flight, maximum
+height and range of the projectile based on different options selected
+by the user.
+
+% Test 1. White box testing.
+indexList = [4, 5, 6];
+Expected output: No calculations will be computed since the user 
+already knows the time of flight, maximum height and range of the projectile.
+
+% Test 2. White box testing. 
+indexList = [1, 2, 3];
+initialVelocity = 70;
+angleHorizontal = 40; 
+initialHeight = 0;
+Expected output: All valid values have been selected, so the program will
+compute that:
+time = 9.1827;
+rangeProjectile = 492.4039;
+maximumHeight = 103.2940;
+
+% Test 3. White box testing. Testing when there have been invalid 
+parameters entered by the user.
+indexList = [1, 3, 5];
+initialVelocity = 60;
+initialHeight = -100;
+rangeProjectile = 400;
+Expected output: There will be no computations available for output to the 
+user. The program will continue to prompt the user for another value for 
+the initial height of the projectile that is positive. 

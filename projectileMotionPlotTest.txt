@@ -1,0 +1,41 @@
+% The tests below describe the expected output for the graphs of the 
+vertical displacement, velocity and acceleration against time of the 
+projectile.
+
+% Test 1. 
+If the user selects:
+indexList = [1, 2, 3];
+initialVelocity = 60;
+angleHorizontal = 30;
+initialHeight = 0;
+
+Expected output: Program will calcualted that time = 6.12 seconds, maximum 
+height = 45.9 metres and the range = 318.1 metres. 
+
+The graph representing the vertical displacement of projectile over time 
+will take a parabolic shape, with a maximum height of 46.9 along the y-axis. 
+The x-axis will have a constraint at approximately 6 seconds, representing 
+the time of flight of the projectile.
+
+The velocity of projectile over time will be the derivative of the graph 
+of the vertical dispalcement of projectile over time. At the time the projectile
+reaches its maximum height, the graph representing its velocity will have 
+v = 0 and cut the x-axis. The x-axis will have a constraint at 
+approximately 6 seconds, representing the time of the projectile.
+
+The acceleration of the projectile over time will be a line equal to y = -9.8
+since acceleration is a constant parameter in the program as the effects of 
+air resistance is neglected. The x-axis will have a constraint at 
+approximately 6 seconds, representing the time of the projectile.
+
+% Test 2. 
+If the user selects: 
+indexList = [1];
+Expected output: No graph since there are not enough parameters selected
+by the user.
+
+% Test 3. 
+If the user selects:
+indexList = [3, 4, 5, 6];
+Expected output: No graph will be provided since the user already knows 
+the time of flight, maximum height and range of the projectile. 

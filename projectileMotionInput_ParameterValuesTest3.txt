@@ -1,0 +1,20 @@
+% The test below tests when the user has not selected enough parameters
+corresponding to any of the options in the if-else statement. 
+
+% Test 1. White box testing.
+indexList = [1];
+Expected output: The message, 'You do not have enough known values " + ...
+        "to calculate the time of flight, range and maximum height of " + ...
+        "the projectile.' will be displayed to the user. 
+
+% Test 2. White box testing. 
+indexList = [1, 3];
+Expected output: The message, 'You do not have enough known values " + ...
+        "to calculate the time of flight, range and maximum height of " + ...
+        "the projectile.' will be displayed to the user.
+
+% Test 3. White box testing. 
+indexList = [1, 6];
+Expected output: The message, 'You do not have enough known values " + ...
+        "to calculate the time of flight, range and maximum height of " + ...
+        "the projectile.' will be displayed to the user.  

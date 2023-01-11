@@ -1,0 +1,20 @@
+% Test 1.
+% Test equivalence case of a boundary case.
+% Expected output is 'false' since initialVelocity <= 0, so the user will be
+prompted to enter the value again until it is greater than 0.
+initialVelocity = 0;
+[initialVelocity] = initialVelocityCheck(initialVelocity);
+
+% Test 2.
+% Test equivalence case of a positive number. 
+% Expected output is 'true' since initialVelocity > 0, so the user will not 
+be prompted to re-enter its value.
+initialVelocity = 500;
+[initialVelocity] = initialVelocityCheck(initialVelocity);
+
+% Test 3. 
+% Test equivalence case of a negative number.
+% Expected output is 'false' since initialVelocity <= 0, so the user will be
+prompted to enter the value again until it is greater than 0.
+initialVelocity = -1000;
+[initialVelocity] = initialVelocityCheck(initialVelocity);

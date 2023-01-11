@@ -1,0 +1,16 @@
+% Test 1. 
+% Test equivalence case of a boundary case.
+% Expected output is 0. 
+initialVelocity = 0;
+angleHorizontal = 0;
+[verticalInitial] = verticalInitial(initialVelocity, angleHorizontal);
+
+% Test 2.
+% Test equivalence case of a large positive number. Note, negative numbers
+cannot be tested since the program will not compute any calculations with
+negative values representing the 'initialVelocity' and 'angleHorizontal' 
+since this is not practical in real-life contexts.
+% Expected output is approximately 76.6. 
+initialVelocity = 100;
+angleHorizontal = 50;
+[verticalInitial] = verticalInitial(initialVelocity, angleHorizontal);

@@ -1,0 +1,19 @@
+% Test 1.
+% Test equivalence case of a boundary case.
+% There will be no expected output. The function 'rangeProjectileCheck' 
+requires a range greater than 0 and the function 'initialVelocityCheck' 
+will require a value greater than 0. 
+rangeProjectile = 0;
+accelerationGravity = -9.8;
+initialVelocity = 0;
+[angleHorizontal] = angleHorizontal2(rangeProjectile, ...
+    accelerationGravity, initialVelocity);
+
+% Test 2. 
+% Test equivalence case of extremely large positive numbers. 
+% Expected output is approximately 14.7 degrees above the horizontal.
+rangeProjectile = 500;
+accelerationGravity = -9.8;
+initialVelocity = 100;
+[angleHorizontal] = angleHorizontal2(rangeProjectile, ...
+    accelerationGravity, initialVelocity);

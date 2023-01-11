@@ -1,0 +1,21 @@
+% The tests below test the results of the parameters entered by the user. 
+
+% Test 1. White box testing.
+indexList = [];
+Expected output: There will be no prompts visible to the user since there
+were no options selected. 
+
+% Test 2: White box testing. Testing where there are no options to prompt
+user for parameters.
+indexList = [4, 5, 6]
+Expected output: There will be no prompts visible since the 
+user already knows the time of flight, maximum height and range of the 
+projectile. This needs to be considered in the next scripts to provide
+an output to the user to describe this.
+
+% Test 3. Black box testing. 
+indexList = [1, 2, 3]
+Expected ouput: Since the values of the elements in indexList match 
+ones of the options in the if-else statement, the program will prompt the 
+user for the initial height, angle of the horizontal and the 
+initial velocity. 

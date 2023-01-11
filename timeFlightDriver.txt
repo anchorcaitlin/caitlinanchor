@@ -1,0 +1,27 @@
+% The tests below tests that the correct time of flight has been identified 
+by the function timeFlight. Since the user does not input the 
+verticalInitial value, the computations will be done by hand and then 
+compared to the results of the program. Random values representing the 
+parameters will be entered by the user to determine the value of 
+'verticalInitial', and then the value of the time of flight will be 
+calculated by the program. 
+
+% Test 1.
+% Test equivalence case of a boundary case.
+% There will be no expected output by the program. The only possible 
+way that 'verticalInitial' will be zero is if the projectile is 
+horizontally launched, which cannot occur in this program. Therefore, 
+the user will be prompted to re-enter the initial velocity. 
+verticalInitial = 0;
+accelerationGravity = -9.8;
+[time] = timeFlight (verticalInitial, accelerationGravity);
+
+% Test 2. 
+% Test equivalence case of a large positive number. Note, negative numbers
+cannot be tested since the program will not compute any calculations with
+negative values representing the 'initialVelocity' and 'angleHorizontal' 
+since this is not practical in real-life contexts.
+% Expected output is approximately 3.48 seconds. 
+verticalInitial = 17.0;
+accelerationGravity = -9.8;
+[time] = timeFlight (verticalInitial, accelerationGravity);

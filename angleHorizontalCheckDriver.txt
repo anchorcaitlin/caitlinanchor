@@ -1,0 +1,20 @@
+% Test 1.
+% Test equivalence case of a boundary case.
+% Expected output is 'false' since angleHorizontal does not lie between 
+0 and 360 degrees. An angle of 0 degrees represents a horizontally launched
+projectile. 
+angleHorizontal = 0;
+[angleHorizontal] = angleHorizontalCheck(angleHorizontal);
+
+% Test 2.
+% Test equivalence case of a positive number. 
+% Expected output is 'true' since angleHorizontal lies between 0 and 
+360 degrees. 
+angleHorizontal = 300;
+[angleHorizontal] = angleHorizontalCheck(angleHorizontal);
+
+% Test 3.
+% Test equivalence case of an extremely negative number.
+% Expected output is 'false' since it lies below 0 degrees.  
+angleHorizontal = -1900;
+[angleHorizontal] = angleHorizontalCheck(angleHorizontal);

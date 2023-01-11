@@ -1,0 +1,17 @@
+% Test 1.
+% Test equivalence case of a boundary case.
+% Expected output is 'true' since initialHeight is not below 0.
+initialHeight = 0;
+[initialHeight] = initialHeightCheck(initialHeight);
+
+% Test 2.
+% Test equivalence case of a negative number.
+% Expected output is 'false' since initialHeight < 0.
+initialHeight = -100;
+[initialHeight] = initialHeightCheck(initialHeight);
+
+% Test 3.
+% Test equivalence case of an extremely positive number.
+% Expected output is 'true' since initialHeight > 0.
+initialHeight = 5000;
+[initialHeight] = initialHeightCheck(initialHeight);

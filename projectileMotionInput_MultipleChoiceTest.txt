@@ -1,0 +1,18 @@
+% The tests below outline a range of different selections that the user
+could choose. If the choice is 0, this results in the user not selecting
+that particiular option.
+
+% Test 1: Black box testing. 
+% Expected output is indexList = [1, 2, 3];
+choice1.    choice2.    choice3.    choice4.    choice5.    choice6.
+1           2           3           0           0           0
+
+% Test 2: White box testing. 
+% Expected output is indexList = [];
+choice1.    choice2.    choice3.    choice4.    choice5.    choice6.
+0           0           0           0           0           0
+
+% Test 3: White box testing. 
+% Expected output is indexList = [1, 2, 3, 4, 5, 6];
+choice1.    choice2.    choice3.    choice4.    choice5.    choice6.
+1           2           3           4           5           6

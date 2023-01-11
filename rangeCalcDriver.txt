@@ -1,0 +1,35 @@
+% The tests below confirm that the correct range has been identified by 
+the function rangeCalc. Since the user does not input the horizontalInitial 
+and time values, the computations will be done by hand and then compared 
+to the results of the program. Random values representing the parameters 
+will be entered by the user to determine the value of 'horizontalInitial' 
+and 'time', then the value of the maximum height will be calculated by 
+the program. 
+
+% Test 1.
+% Test equivalence case of a boundary case.
+% There will be no expected output. If the horizontal initial velocity is 
+0, the projectile is travelling vertically upwards. This means that the 
+projectile is travelling with an angle of 0 degrees above the horizontal, 
+but the function 'angleHorizontalCheck' will require a value between 0 and 
+360 degrees (non-inclusive). 
+horizontalInitial = 0;
+time = 60;
+[range] = rangeCalc (horizontalInitial, time);
+
+% Test 2.
+% Test equivalence case of positive numbers. 
+% Expected output is 300 by substituting the values into the projectile 
+motion equation s = v * t. 
+horizontalInitial = 50;
+time = 6;
+[range] = rangeCalc (horizontalInitial, time);
+
+% Test 3.
+% Test equivalence case of extremely large positive numbers. 
+% Expected output is 9000 by substituting the values into the projectile 
+motion equation s = v * t. While this range is extremely large, it may 
+still be possible in the user's problem.
+horizontalInitial = 1000;
+time = 9;
+[range] = rangeCalc (horizontalInitial, time);

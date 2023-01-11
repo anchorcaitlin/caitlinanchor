@@ -1,0 +1,28 @@
+% The tests below confirms the expected results of the ways in which the 
+values of the maximum height, range and time of flight of the projectile 
+are printed out to the user.
+
+% Test 1. 
+indexList = [1];
+Expected output: No calculations performed by the program since there 
+are not enough known parameters selected. Therefore, there will be no message 
+outputted regarding these calculations. 
+
+% Test 2. 
+indexList = [1, 2, 3];
+Expected output: Calculations will be performed and outputted to the user 
+since indexList = [1, 2, 3] allows calculations to be performed.
+If the user selected:
+initialVelocity = 60;
+angleHorizontal = 20;
+initialHeight = 1;
+Expected output: 
+The projectile reaches the ground at 4.18s
+The projectile has a maximum height of 21.5m
+The range of the projectile is 236.1m
+
+% Test 3. 
+indexList = [4, 5, 6];
+Expected output: There will be no message displayed to the user since the 
+user already knows the time of flight, range and maximum height of the 
+projectile. 
