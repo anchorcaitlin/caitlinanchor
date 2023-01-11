@@ -1,0 +1,10 @@
+#ifndef OOP_GROUP_PROJECT_STARTBUTTON_H
+#define OOP_GROUP_PROJECT_STARTBUTTON_H
+
+
+class StartButton {
+
+};
+
+
+#endif //OOP_GROUP_PROJECT_STARTBUTTON_H
