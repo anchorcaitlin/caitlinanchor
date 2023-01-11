@@ -1,3 +1,3 @@
 # caitlinanchor
 
-Implemenation of data structures in C++
+Implementation of data structures in C++
