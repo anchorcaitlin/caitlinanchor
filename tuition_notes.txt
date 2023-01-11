@@ -1,0 +1,9 @@
+Functionality of Application 
+
+/*
+    Tutor 
+        - Book in sessions, see calander of sessions
+
+    Student and Parent 
+        - Can view daily attendance and upcoming and past sessions 
+*/
