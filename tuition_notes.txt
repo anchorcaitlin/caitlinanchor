@@ -1,0 +1,13 @@
+Functionality of Application 
+
+Booking can be made for one week in advance 
+
+New dates are added automatically in the database
+
+/*
+    Tutor 
+        - Book in sessions, see calander of sessions
+
+    Student and Parent 
+        - Can view daily attendance and upcoming and past sessions 
+*/
